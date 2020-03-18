@@ -7,7 +7,7 @@ configure({ adapter: new Adapter() });
 
 global.confirm = jest.fn();
 
-jest.spyOn(global.console, 'log').mockImplementation(() => jest.fn());
+//jest.spyOn(global.console, 'log').mockImplementation(() => jest.fn());
 jest.spyOn(global.console, 'warn').mockImplementation(() => jest.fn());
 jest.mock('electron', () => require('./mocks/electron'));
 jest.mock('fs-extra');

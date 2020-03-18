@@ -98,7 +98,7 @@ export async function getAvailableThemes(): Promise<Array<LoadedFiddleTheme>> {
  * @returns {Promise<FiddleTheme>}
  */
 export async function getTheme(name?: string | null): Promise<LoadedFiddleTheme> {
-  console.log(`Themes: getTheme() loading ${name || 'default'}`);
+  //console.log(`Themes: getTheme() loading ${name || 'default'}`);
   const theme = await readThemeFile(name || undefined) || defaultDark;
 
   return { ...theme, css: await getCssStringForTheme(theme) };

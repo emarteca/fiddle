@@ -48,7 +48,7 @@ export async function showSaveDialog(event?: IpcEvents, as?: string) {
     return;
   }
 
-  console.log(`Asked to save to ${filePaths[0]}`);
+  //console.log(`Asked to save to ${filePaths[0]}`);
 
   // Let's confirm real quick if we want this
   if (await ensureSaveTargetEmpty(filePaths[0])) {
