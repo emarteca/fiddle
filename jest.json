@@ -5,13 +5,13 @@
   "testURL": "http://localhost",
   "testRegex": "(-spec)\\.(ts|tsx)$",
   "resetMocks": true,
-  "bail": true,
+  "bail": false,
   "resetModules": true,
   "snapshotSerializers": [
     "enzyme-to-json/serializer"
   ],
   "setupFilesAfterEnv": [
-    "<rootDir>/tests/setup.js"
+    "<rootDir>/tests/setup.js", "<rootDir>/unit-error-hack.js"
   ],
   "moduleFileExtensions": [
     "js",
@@ -36,6 +36,16 @@
   "coveragePathIgnorePatterns": [
     "/node_modules/",
     "/tests/.*\\.(ts|js)$"
+  ],
+  "reporters": [
+	"default",
+	[
+		"jest-junit",
+		{
+			"outputDirectory": ".",
+			"outputName": "junit-unit-tests.xml"
+		}
+	]
   ],
   "moduleNameMapper": {
     ".*releases.json$": "<rootDir>/static/releases.json"

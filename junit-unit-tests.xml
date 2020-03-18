@@ -1,0 +1,99 @@
+<testsuites name="jest tests" tests="36" failures="2" time="5.572">
+  <testsuite name="files" errors="0" failures="1" skipped="0" timestamp="2020-03-18T23:15:23" time="0.661" tests="9">
+    <testcase classname="files setupFileListeners() sets up the listener" name="files setupFileListeners() sets up the listener" time="0.003">
+    </testcase>
+    <testcase classname="files showOpenDialog tries to open an &quot;open&quot; dialog" name="files showOpenDialog tries to open an &quot;open&quot; dialog" time="0.001">
+    </testcase>
+    <testcase classname="files showOpenDialog notifies the main window of the event" name="files showOpenDialog notifies the main window of the event" time="0.001">
+    </testcase>
+    <testcase classname="files showSaveDialog tries to open an &quot;open&quot; dialog to be used as a save dialog" name="files showSaveDialog tries to open an &quot;open&quot; dialog to be used as a save dialog" time="0.001">
+    </testcase>
+    <testcase classname="files showSaveDialog tries to open an &quot;open&quot; dialog to be used as a save as dialog" name="files showSaveDialog tries to open an &quot;open&quot; dialog to be used as a save as dialog" time="0.001">
+    </testcase>
+    <testcase classname="files showSaveDialog handles not getting a path returned" name="files showSaveDialog handles not getting a path returned" time="0.001">
+    </testcase>
+    <testcase classname="files showSaveDialog ensures that the target is empty on save" name="files showSaveDialog ensures that the target is empty on save" time="0.004">
+      <failure>Error: TEMP_VAR_AUTOGEN_CALLING_21__RANDOM
+    at BufferedConsole.console.error (/home/ellen/Documents/ASJProj/TESTING_reordering/fiddle/unit-error-hack.js:5:47)
+    at Object.&lt;anonymous&gt; (/home/ellen/Documents/ASJProj/TESTING_reordering/fiddle/tests/main/files-spec.ts:195:9)
+    at Object.asyncJestTest (/home/ellen/Documents/ASJProj/TESTING_reordering/fiddle/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:100:37)
+    at /home/ellen/Documents/ASJProj/TESTING_reordering/fiddle/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/ellen/Documents/ASJProj/TESTING_reordering/fiddle/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/ellen/Documents/ASJProj/TESTING_reordering/fiddle/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+    <testcase classname="files showSaveDialog does not overwrite files without consent" name="files showSaveDialog does not overwrite files without consent" time="0">
+    </testcase>
+    <testcase classname="files showSaveDialog does not overwrite files if an error happens" name="files showSaveDialog does not overwrite files if an error happens" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="first-run" errors="0" failures="1" skipped="0" timestamp="2020-03-18T23:15:24" time="0.207" tests="5">
+    <testcase classname="first-run onFirstRunMaybe() doesn&apos;t run unless required (not first run)" name="first-run onFirstRunMaybe() doesn&apos;t run unless required (not first run)" time="0.002">
+    </testcase>
+    <testcase classname="first-run onFirstRunMaybe() doesn&apos;t run unless required (is already in app folder)" name="first-run onFirstRunMaybe() doesn&apos;t run unless required (is already in app folder)" time="0.002">
+    </testcase>
+    <testcase classname="first-run onFirstRunMaybe() doesn&apos;t run unless required (dev mode)" name="first-run onFirstRunMaybe() doesn&apos;t run unless required (dev mode)" time="0.001">
+    </testcase>
+    <testcase classname="first-run onFirstRunMaybe() doesn&apos;t run unless required (Windows, Linux)" name="first-run onFirstRunMaybe() doesn&apos;t run unless required (Windows, Linux)" time="0">
+    </testcase>
+    <testcase classname="first-run onFirstRunMaybe() moves the app when requested to do so" name="first-run onFirstRunMaybe() moves the app when requested to do so" time="0.002">
+      <failure>Error: TEMP_VAR_AUTOGEN_CALLING_15__RANDOM
+    at BufferedConsole.console.error (/home/ellen/Documents/ASJProj/TESTING_reordering/fiddle/unit-error-hack.js:5:47)
+    at Object.&lt;anonymous&gt; (/home/ellen/Documents/ASJProj/TESTING_reordering/fiddle/tests/main/first-run-spec.ts:142:9)
+    at Object.asyncJestTest (/home/ellen/Documents/ASJProj/TESTING_reordering/fiddle/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:100:37)
+    at /home/ellen/Documents/ASJProj/TESTING_reordering/fiddle/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/ellen/Documents/ASJProj/TESTING_reordering/fiddle/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/ellen/Documents/ASJProj/TESTING_reordering/fiddle/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Editors component" errors="0" failures="0" skipped="0" timestamp="2020-03-18T23:15:25" time="2.963" tests="19">
+    <testcase classname="Editors component setup() renders the app" name="Editors component setup() renders the app" time="0.019">
+    </testcase>
+    <testcase classname="Editors component setup() creates a touch bar manager on macOS" name="Editors component setup() creates a touch bar manager on macOS" time="0.003">
+    </testcase>
+    <testcase classname="Editors component setup() does not create a touch bar manager on Windows and Linux" name="Editors component setup() does not create a touch bar manager on Windows and Linux" time="0.002">
+    </testcase>
+    <testcase classname="Editors component getEditorValues() gets values" name="Editors component getEditorValues() gets values" time="0.002">
+    </testcase>
+    <testcase classname="Editors component getEditorValues() handles missing editors" name="Editors component getEditorValues() handles missing editors" time="0.002">
+    </testcase>
+    <testcase classname="Editors component getEditorValues() throws if the Fiddle object is not present" name="Editors component getEditorValues() throws if the Fiddle object is not present" time="0.002">
+    </testcase>
+    <testcase classname="Editors component replaceFiddle() sets editor values and source info" name="Editors component replaceFiddle() sets editor values and source info" time="0.004">
+    </testcase>
+    <testcase classname="Editors component replaceFiddle() unsets state of previous source when called" name="Editors component replaceFiddle() unsets state of previous source when called" time="0.003">
+    </testcase>
+    <testcase classname="Editors component replaceFiddle() marks the new Fiddle as Saved" name="Editors component replaceFiddle() marks the new Fiddle as Saved" time="0.002">
+    </testcase>
+    <testcase classname="Editors component replaceFiddle() when current Fiddle is unsaved and prompt appears takes no action if prompt is rejected" name="Editors component replaceFiddle() when current Fiddle is unsaved and prompt appears takes no action if prompt is rejected" time="0.008">
+    </testcase>
+    <testcase classname="Editors component replaceFiddle() when current Fiddle is unsaved and prompt appears sets editor values and source info if prompt is accepted" name="Editors component replaceFiddle() when current Fiddle is unsaved and prompt appears sets editor values and source info if prompt is accepted" time="0.003">
+    </testcase>
+    <testcase classname="Editors component setEditorValues() attempts to set values" name="Editors component setEditorValues() attempts to set values" time="0.001">
+    </testcase>
+    <testcase classname="Editors component setEditorValues() attempts to set values for closed editors" name="Editors component setEditorValues() attempts to set values for closed editors" time="0.002">
+    </testcase>
+    <testcase classname="Editors component setEditorValues() throws if the Fiddle object is not present" name="Editors component setEditorValues() throws if the Fiddle object is not present" time="0.001">
+    </testcase>
+    <testcase classname="Editors component setEditorValues() does not set a value if none passed in" name="Editors component setEditorValues() does not set a value if none passed in" time="0.001">
+    </testcase>
+    <testcase classname="Editors component setupResizeListener() attaches to the handler" name="Editors component setupResizeListener() attaches to the handler" time="0.001">
+    </testcase>
+    <testcase classname="Editors component setupTheme() adds the current theme&apos;s css to the document" name="Editors component setupTheme() adds the current theme&apos;s css to the document" time="0.005">
+    </testcase>
+    <testcase classname="Editors component setupTheme() removes the dark theme option if required" name="Editors component setupTheme() removes the dark theme option if required" time="0.003">
+    </testcase>
+    <testcase classname="Editors component setupTheme() adds the dark theme option if required" name="Editors component setupTheme() adds the dark theme option if required" time="0.04">
+    </testcase>
+  </testsuite>
+  <testsuite name="Dialogs component" errors="0" failures="0" skipped="0" timestamp="2020-03-18T23:15:28" time="1.358" tests="3">
+    <testcase classname="Dialogs component renders the token dialog" name="Dialogs component renders the token dialog" time="0.004">
+    </testcase>
+    <testcase classname="Dialogs component renders the settings dialog" name="Dialogs component renders the settings dialog" time="0.002">
+    </testcase>
+    <testcase classname="Dialogs component renders the settings dialog" name="Dialogs component renders the settings dialog" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>
