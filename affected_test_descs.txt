@@ -1,0 +1,2 @@
+files showSaveDialog ensures that the target is empty on save
+first-run onFirstRunMaybe() moves the app when requested to do so
