@@ -35,8 +35,7 @@ output_file = sys.argv[1]
 # now, do the actual processing
 jest_tests = parse_xml_file("junit-unit-tests.xml")
 relevant_descs = parse_relevant_descs_file("affected_test_descs.txt")
-all_descs = "|".join(relevant_descs.test_desc)
-jest_tests["relevant"] = jest_tests.test_id.str.contains(all_descs)
+jest_tests["relevant"] = jest_tests.test_id.isin(relevant_descs.test_desc)
 jest_tests = jest_tests[jest_tests.relevant].drop(["relevant"], axis=1)
 append_DF_to_file( jest_tests, output_file)
 
